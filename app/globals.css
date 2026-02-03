@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --primary: #0a0a0a;
+  /* Black for light mode primary */
+  --secondary: #404040;
+  /* Dark Gray */
+  --accent: #171717;
+  /* Neutral Black */
+}
+
+.dark {
+  --background: #000000;
+  /* Pure Black */
+  --foreground: #ffffff;
+  --primary: #ffffff;
+  /* White for dark mode primary */
+  --secondary: #a3a3a3;
+  /* Light Gray */
+  --accent: #e5e5e5;
+  /* Near White */
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass-nav {
+    @apply backdrop-blur-md bg-white/70 border-b border-black/5 dark:bg-black/70 dark:border-white/10;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-black/5 border border-black/10 dark:bg-white/5 dark:border-white/10 shadow-xl;
+  }
+
+  .neon-text {
+    /* Subtle white glow instead of blue neon */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.33333%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}

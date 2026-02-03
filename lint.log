@@ -1,0 +1,23 @@
+
+> frontend@0.1.0 lint
+> eslint
+
+
+C:\Users\sajin\OneDrive\Desktop\eee\EVASPIRE\frontend\app\ai-ad-generation\page.tsx
+  4:10  warning  'Sparkles' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sajin\OneDrive\Desktop\eee\EVASPIRE\frontend\app\contact\page.tsx
+   4:23  warning  'MapPin' is defined but never used                               @typescript-eslint/no-unused-vars
+  13:28  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\sajin\OneDrive\Desktop\eee\EVASPIRE\frontend\app\final-year-projects\page.tsx
+  3:10  warning  'motion' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sajin\OneDrive\Desktop\eee\EVASPIRE\frontend\app\prebuilt-models\page.tsx
+  4:16  warning  'Camera' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sajin\OneDrive\Desktop\eee\EVASPIRE\frontend\components\Footer.tsx
+  2:23  warning  'MapPin' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 6 problems (1 error, 5 warnings)
+

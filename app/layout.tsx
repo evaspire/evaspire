@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${poppins.variable} ${montserrat.variable} font-sans bg-[var(--background)] text-[var(--foreground)]`}>
+         <meta name="google-site-verification" content="bCMEJoUjnKET1OyTv44YyDRljS_CMrTxsUt50UZHjUo" />
          <Script
         id="microsoft-clarity"
         strategy="afterInteractive"
